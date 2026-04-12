@@ -1,0 +1,22 @@
+{
+  "name": "tempmail-telegram-bot",
+  "version": "0.1.0",
+  "description": "TempMail Telegram bot with cPanel email integration",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "echo \"No linter configured yet\""
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1",
+    "node-telegram-bot-api": "^0.66.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
