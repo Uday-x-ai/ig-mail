@@ -289,7 +289,7 @@ async function startDepositFlow(bot, msg, user) {
         }
 
         const rawAmount = Number.parseFloat(data.TXNAMOUNT);
-        const points = Number.isFinite(rawAmount) ? Math.max(1, Math.round(rawAmount)) : 0;
+        const points = Number.isFinite(rawAmount) ? Math.max(1, Math.round(rawAmount * 2)) : 0;
 
         if (points <= 0) {
           markDepositStatus(paymentId, "failed", null, JSON.stringify(data));
